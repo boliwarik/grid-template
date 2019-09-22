@@ -1,0 +1,78 @@
+.header-logo {
+  letter-spacing: 0.2em;
+
+  font-size: 1.5rem;
+
+  align-self: center;
+
+  &__link {
+    display: block;
+
+    padding: $gap $gap $gap 0;
+
+    &:hover,
+    &:focus {
+      color: $color-light;
+    }
+  }
+
+  &__accent {
+    display: inline-block;
+
+    margin-right: 5px;
+    padding: 15px 3px 15px 7px;
+
+    border: 2px solid $color-highlight;
+  }
+}
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+.header-navbar__hamburger span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.header-navbar__hamburger span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.header-navbar__hamburger span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.header-navbar__hamburger.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.header-navbar__hamburger.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.header-navbar__hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
